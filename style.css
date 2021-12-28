@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 :root{
-    --primary-color: #f60f20;
+    --primary-color: #1b206e;
 }
 
 *{
@@ -31,9 +31,11 @@ section{
     align-items: center;
     padding: 100px;
     z-index: 10;
+    margin-top: 60px;
 }
 section.home{
     flex-direction: row;
+    margin-top: 0;
 }
 
 .btn{
@@ -135,6 +137,7 @@ section.home{
 
 .navigation ul li a:hover{
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 .navigation .social-bar{
@@ -157,6 +160,35 @@ section.home{
     transform: scale(0.5);
 }
 
+
+/* Our Services */
+.services{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+}
+
+.services .service .icon img{
+    max-width: 100px;
+}
+
+.services .service{
+    padding: 30px;
+}
+
+.services .service:hover{
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.services .service h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+
 @media(max-width: 1068px){
     .home-img{
         display: none;
@@ -174,5 +206,19 @@ section.home{
     .navigation ul li a{
 
         font-size: 2rem;
+    }
+
+    .services{
+      
+        grid-template-columns:1fr 1fr;
+        
+    }
+
+    @media (max-width: 768px){
+    .services{
+      
+        grid-template-columns:1fr;
+        
+    }
     }
 }
