@@ -339,6 +339,10 @@ section.home {
     color: var(--primary-color)
 }
 
+.contact-info .info-box .details a{
+    color: #111;
+}
+
 
 
 /* Media Query */
@@ -366,6 +370,23 @@ section.home {
         grid-template-columns: 1fr 1fr;
     }
 
+.contact{
+    flex-direction: column;
+}
+
+.contact-form{
+    width: 100%;
+    padding: 30px 30px 20px;
+}
+
+.contact-info{
+    width: 100%;
+    margin-top: 20px;
+    padding: 30px 30px 20px;
+
+}
+
+/* Media query smaller device */
     @media (max-width: 768px) {
         .services {
 
